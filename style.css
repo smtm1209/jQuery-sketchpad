@@ -1,0 +1,13 @@
+h1 {
+	text-align: center;
+	margin: auto;
+}
+#width-tb, #height-tb {
+	margin: 0 0 10px 0;
+}
+h4 {
+	margin: 3px 0;
+}
+#submit {
+	margin: 10px 0;
+}
