@@ -12,9 +12,10 @@
 		<form id="myForm">
 			<h4>Enter sketchpad width: </h4> <input type="text" name="width" id="width-tb" placeholder="16">
 			<h4>Enter sketchpad height: </h4> <input type="text" name="height" id="height-tb" placeholder="16">
-			<br><input id="submit" type="submit" value="Change dimensions" onclick="changeDim(document.getElementById('width-tb'), document.getElementById('height-tb'))">
+			<br><input id="submit" type="submit" value="Change dimensions & erase" onclick="changeDim(document.getElementById('width-tb'), document.getElementById('height-tb'))">
 		</form>
-		<table>
+		<table id="sketchpad">
+			<!-- jQuery!!! -->
 		</table>
 	</body>
 </html>

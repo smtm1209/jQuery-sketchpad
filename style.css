@@ -1,13 +1,26 @@
 h1 {
 	text-align: center;
 	margin: auto;
+	font-family: Helvetica, Sans-Serif;
+	color: #009;
 }
 #width-tb, #height-tb {
 	margin: 0 0 10px 0;
 }
 h4 {
 	margin: 3px 0;
+	font-family: Helvetica, Sans-Serif;
+	color: #009;
 }
 #submit {
 	margin: 10px 0;
+}
+td {
+	border: 1px solid black;
+}
+.unvisited {
+	color: white;
+}
+.visited {
+	color: #00c;
 }
