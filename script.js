@@ -1,13 +1,27 @@
-const MAX_DIM = 100;
+var MAX_DIM = 100;
 $(document).ready(function(){
+	//MAX_DIM = $(window).width();
+	//alert(MAX_DIM);
 	changeDim(16, 16);
+	$("button").click(function(){
+		var neww = $("#width-tb").val()
+		var newh = $("#height-tb").val()
+		alert(neww + ", " + newh);
+		$("tr").detach();
+		changeDim(neww, newh);
+	});
+	$(document).on('mouseover', '.unvisited', function(){
+		$(this).addClass("visited");
+		//alert("hovered");
+	});
 });
 
+
 function changeDim(width, height) {	
-	/*if(isNaN(width) || isNaN(height)) {
+	if(isNaN(width) || isNaN(height)) {
 		alert("ERROR: Invalid text input. Setting to 16x16.");
 		width = 16; height = 16;
-	}*/
+	}
 	if(width > 50 || height > 50) {
 		alert("ERROR: Specified window too large. Setting to 16x16.");
 		width = 16; height = 16;

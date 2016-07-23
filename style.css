@@ -12,15 +12,15 @@ h4 {
 	font-family: Helvetica, Sans-Serif;
 	color: #009;
 }
-#submit {
+button {
 	margin: 10px 0;
 }
 td {
 	border: 1px solid black;
 }
 .unvisited {
-	color: white;
+	background-color: white;
 }
 .visited {
-	color: #00c;
+	background-color: #00c;
 }
