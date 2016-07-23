@@ -1,18 +1,14 @@
 var MAX_DIM = 100;
 $(document).ready(function(){
-	//MAX_DIM = $(window).width();
-	//alert(MAX_DIM);
 	changeDim(16, 16);
 	$("button").click(function(){
 		var neww = $("#width-tb").val()
 		var newh = $("#height-tb").val()
-		alert(neww + ", " + newh);
 		$("tr").detach();
 		changeDim(neww, newh);
 	});
 	$(document).on('mouseover', '.unvisited', function(){
 		$(this).addClass("visited");
-		//alert("hovered");
 	});
 });
 
